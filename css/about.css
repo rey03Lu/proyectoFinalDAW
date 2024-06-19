@@ -1,0 +1,79 @@
+/* Estilos generales para las imágenes */
+img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+  }
+  
+  /* Estilos para los contenedores de secciones */
+  .container-about {
+    width: 100%;
+    padding: 20px;
+    margin-top: 100px;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  /* Estilos para los encabezados dentro de las secciones */
+  section h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para los párrafos dentro de las secciones */
+  section p {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para la sección de historia */
+  .historia {
+    margin-bottom: 30px;
+  }
+  
+  /* Estilos para la misión y visión */
+  .mision-vision {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .mision, .vision {
+    flex: 1;
+    background-color: #b47f31;
+    padding: 20px;
+    color: white;
+    box-sizing: border-box;
+  }
+  
+  .slogan {
+    font-style: italic;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: bold;
+  }
+  
+  
+  /* Media Queries para dispositivos móviles */
+  @media screen and (max-width: 768px) {
+    .mision-vision {
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .container-about {
+      padding: 10px;
+    }
+  
+    section h2 {
+      font-size: 1.5em;
+    }
+  }
