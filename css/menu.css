@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    padding: 20px 0;
+    position: fixed;
+    height: 60px;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: white;
+    width: 100%;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container .logo {
+    max-width: 250px;
+    height: auto;
+}
+
+header .container nav {
+    display: flex;
+    align-items: center;
+}
+
+header .container nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header .container nav ul li {
+    margin: 0 20px;
+}
+
+header .container nav a {
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+}
+
+header .container nav a:hover {
+    color: #b47f31;
+    text-decoration: none;
+    box-shadow: 0 3px 0 #b47f31;
+}
+
+header .container nav a.active {
+    color: #b47f31;
+    text-decoration: none;
+    border-bottom: 3px solid #b47f31;
+    padding-bottom: 3px;
+    font-weight: bold;
+}
+
+/* Estilos para el checkbox y el ícono del menú en pantallas pequeñas */
+header .container #menu {
+    display: none;
+}
+
+header .container .checkbtn {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    header .container nav {
+        position: absolute; /* Permite posicionar relativo al contenedor del header */
+        top: 60px; /* Ajusta esta medida según la altura de tu header */
+        left: -100%; /* Por defecto fuera de la pantalla */
+        width: 100%; /* Ocupa todo el ancho */
+        height: calc(100vh - 60px); /* Ajuste para ocupar toda la pantalla menos la altura del header */
+        background-color: white;
+        display: flex; /* Cambiado a flex para la distribución */
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around; /* Distribuye uniformemente los elementos */
+        transition: all 0.5s;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    }
+
+    header .container nav ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0; /* Eliminar padding para un mejor ajuste */
+        margin: 0; /* Eliminar margen para un mejor ajuste */
+        display: flex; /* Utilizar flexbox */
+        flex: 1; /* Ocupa todo el espacio disponible */
+        justify-content: space-around; /* Distribuye uniformemente los elementos */
+    }
+
+    header .container nav ul li {
+        margin: 10px 0;
+        width: 100%; /* Asegura que los elementos ocupen todo el ancho */
+        text-align: center; /* Centra el texto de los elementos */
+        flex: 1; /* Cada elemento ocupa igual espacio vertical */
+        display: flex; /* Utilizar flexbox */
+        align-items: center; /* Centra los elementos verticalmente */
+        justify-content: center; /* Centra los elementos horizontalmente */
+    }
+
+    header .container #menu:checked ~ nav {
+        left: 0; /* Mueve el nav a la vista */
+    }
+
+    header .container .checkbtn {
+        display: block;
+    }
+}
