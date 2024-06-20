@@ -161,6 +161,7 @@ footer .logo-ues-footer {
 
 .redes-sociales-footer a:hover {
     transform: scale(1.2);
+    color: white;
 }
 
 .derechos-autor {

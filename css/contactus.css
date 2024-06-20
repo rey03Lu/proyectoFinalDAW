@@ -5,7 +5,12 @@
     text-decoration: none;
     list-style: none;
   } 
-.contact-page {
+
+  .contact-page p {
+    color: black;
+  }
+  
+.contact-page body{
     font-family: 'Roboto';
     font-size: 15px;
     color: black;
@@ -81,6 +86,7 @@
     flex-direction: column;
     justify-content: center; /* Centra verticalmente */
     align-items: center; /* Centra horizontalmente */
+    padding-top: 120px;
   }
   
   .contact-page .form-group { 
@@ -195,7 +201,7 @@
   }
   
   @media (max-width: 991px) {
-    .contact-page {
+    .contact-page body{
       padding: 10px;
     }
     .contact-page .form-group{
