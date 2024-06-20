@@ -5,14 +5,17 @@
     text-decoration: none;
     list-style: none;
   } 
-
+.contact-page section{
+    margin-bottom: 30px;
+}
   .contact-page p {
     color: black;
+    font-size: 20px;
   }
   
 .contact-page body{
     font-family: 'Roboto';
-    font-size: 15px;
+    font-size: 20px;
     color: black;
     background-color: #ffffff;
     margin-top: 110px; /* Igual a la altura del header */
@@ -20,13 +23,14 @@
     margin-right: 0px;
     margin-left: 0xp;
     padding: 0;
+    height: 100vh;
 }
 /* Selectores Pagina de Contacto */
 .contact-page .Contact-contenido {
     background-color: #fff;
-    padding: 30px;
-    padding-left: 50px;
-    padding-top: 0;
+    padding: 0px;
+    padding-left: 10px;
+    padding-top: 10;
     display: flex;
     flex-wrap: wrap;
   }
@@ -34,14 +38,15 @@
     text-align: left;
     color: #333;
     padding: 10px;
+    padding-bottom: 0;
   
   }
   /* Estilo para la tabla */
   .contact-page  .imgTable:first-child {
     flex: 2;
-    padding: 10xp;
+    padding: 5xp;
     background-color: #fff;
-    margin: 20px;
+    margin: 0px;
     margin-bottom: 0;
   }
   .contact-page  .tableContactos {
@@ -70,7 +75,7 @@
   /* Estilos iniciales del icono */
   .contact-page .icon {
     font-size: 24px;
-    color: #333;
+    color: white;
     transition: transform 0.3s ease; /* Transición suave para la animación */
   }
   
@@ -92,7 +97,8 @@
   .contact-page .form-group { 
     background: #ffffff;
     background-position: center;
-    padding: 40px;
+    padding-top: 2px;
+    padding: 20px;
     width: 1000px;
     border-radius: 10px;
     border-color: #b47f31;
@@ -116,9 +122,9 @@
   .contact-page p{
     color: #242323c2;
     font-size: 17px;
-    margin-bottom: 10x;
+    margin-bottom: 5x;
     position: flex;
-    padding: 10px;
+    padding: 5px;
   }
   .contact-page form{
     display: flex;
@@ -133,7 +139,7 @@
     margin-bottom: 15px;
   }
   
-  .contact-page input, .contact-page textarea{
+  .contact-page input,  textarea{
     padding: 15px 10px;
     background-color: #f0f0f0;
     border: 0;
@@ -169,6 +175,7 @@
     border: 1px solid #ccc; /* Agrega un borde gris */
     border-radius: 10px;
     height: 40px;
+    padding-top: 0;
   }
   
   .contact-page .btnWA:hover{
@@ -178,6 +185,7 @@
   .contact-page .WhatsApp {
     display: flex;
     justify-content: center;
+    padding: 0px;
   }
   
   .contact-page  .containerContact {
@@ -190,6 +198,8 @@
     padding-left: 5px;
     padding-right: 5px;
     position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .contact-page .imagenContact{
     display: flex;
