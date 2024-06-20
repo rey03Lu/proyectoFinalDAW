@@ -1,45 +1,45 @@
 /* Estilos generales para las imágenes */
-img {
+.about-page img {
     max-width: 100%; 
     height: auto; 
     display: block; 
   }
   
   /* Estilos para los contenedores de secciones */
-  .container-about {
+  .about-page .container-about {
     width: 100%;
     padding: 20px;
     margin-top: 100px;
   }
   
-  section {
+  .about-page section {
     margin-bottom: 30px;
   }
   
   /* Estilos para los encabezados dentro de las secciones */
-  section h2 {
+  .about-page section h2 {
     margin-top: 40px;
     margin-bottom: 20px;
   }
   
   /* Estilos para los párrafos dentro de las secciones */
-  section p {
+  .about-page section p {
     margin-bottom: 20px;
   }
   
   /* Estilos para la sección de historia */
-  .historia {
+  .about-page .historia {
     margin-bottom: 30px;
   }
   
   /* Estilos para la misión y visión */
-  .mision-vision {
+  .about-page .mision-vision {
     display: flex;
     justify-content: space-between;
     gap: 20px;
   }
   
-  .mision, .vision {
+  .about-page .mision, .about-page .vision {
     flex: 1;
     background-color: #b47f31;
     padding: 20px;
@@ -47,7 +47,7 @@ img {
     box-sizing: border-box;
   }
   
-  .slogan {
+  .about-page .slogan {
     font-style: italic;
     color: rgb(0, 0, 0);
     padding: 20px;
@@ -63,17 +63,17 @@ img {
   
   /* Media Queries para dispositivos móviles */
   @media screen and (max-width: 768px) {
-    .mision-vision {
+    .about-page .mision-vision {
       flex-direction: column;
     }
   }
   
   @media screen and (max-width: 480px) {
-    .container-about {
+    .about-page .container-about {
       padding: 10px;
     }
   
-    section h2 {
+    .about-page section h2 {
       font-size: 1.5em;
     }
   }

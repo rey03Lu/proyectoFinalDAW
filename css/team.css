@@ -1,13 +1,13 @@
 /* Selectores Pagina de Nuestro equipo */
 
 /**/
-.bodyteam {
+.team-page .bodyteam {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #ff9966, #ff5e62);
   }
-  .containerteam {
+  .team-page .containerteam {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -26,7 +26,7 @@
   
   
   
-  .boxteam {
+    .team-page .boxteam {
     width: calc(33.333% - 40px);
     height: 450px;
     background-color: #d5d4c8;
@@ -39,7 +39,7 @@
     border-radius: 30px;
   
   }
-  .boxteam:hover {
+  .team-page .boxteam:hover {
     background-color: #e8e8e8;
     color: #c79c72;
     text-shadow: 2px 2px 4px #f5efef;
@@ -54,26 +54,26 @@
     }
   }
   
-  .boxteam:hover {
+  .team-page .boxteam:hover {
     animation: increase 0.3s ease-in-out forwards;
   }
   
   
   
   
-  .boxteam h2 {
+  .team-page .boxteam h2 {
     margin: 0;
     font-size: 24px;
     color: #663300;
     text-align: center;
   }
-  .boxteam p {
+  .team-page .boxteam p {
     margin: 10px 0;
     font-size: 18px;
     color: #0a0707;
     text-align: center;
   }
-  .boxteam img {
+  .team-page .boxteam img {
     width: 150px;
     height: 150px; 
     border-radius: 50%;
@@ -83,14 +83,14 @@
     
     }
   
-  .boxteam img:hover {
+  .team-page .boxteam img:hover {
     transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el puntero */
   }
   
   
   
   
-  .titleteam {
+  .team-page .titleteam {
     text-align: center;
     font-size: 3em;
     color: #5a3e23;
@@ -98,7 +98,7 @@
     padding: 20px;
   }
   
-  .boxteam small {
+  .team-page .boxteam small {
     margin: 10px 0;
     font-size: 10px;
     color: #0a0707;
@@ -107,29 +107,29 @@
   
   /* Media Queries for Mobile Devices */
 @media screen and (max-width: 768px) {
-    .boxteam {
+  .team-page .boxteam {
       width: calc(50% - 40px);
       margin: 10px 20px;
       height: auto;
     }
   
-    .titleteam {
+    .team-page .titleteam {
       font-size: 2.5em;
     }
   }
   
   @media screen and (max-width: 480px) {
-    .boxteam {
+    .team-page .boxteam {
       width: calc(100% - 40px);
       margin: 10px 20px;
       height: auto;
     }
   
-    .titleteam {
+    .team-page .titleteam {
       font-size: 2em;
     }
   }
-  .social-media img {
+  .team-page .social-media img {
     width: 30px; /* Cambia esto al ancho que desees */
     height: auto; /* Esto mantendrá la proporción de la imagen */
   }

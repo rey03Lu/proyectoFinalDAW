@@ -1,20 +1,120 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <!-- Deja el contenido estático necesario en el head, si lo hay -->
-  </head>
+<head>
+  <!-- Deja el contenido estático necesario en el head, si lo hay -->
+  <link rel="stylesheet" href="css/contactus.css">
+</head>
 
-  <body>
-    <header id="header">
-      <!-- Con el uso de JavaScript, el contenido de este header se carga desde un archivo externo -->
-    </header>
+<body class="contact-page">
+  <header id="header">
+    <!-- Con el uso de JavaScript, el contenido de este header se carga desde un archivo externo -->
+  </header>
+  <div class="centered-content">
+    <h3>¿Cómo podemos ayudarte?</h3>
+  </div>
+  <section class="main-content">
+    <div class="containerContact">
+      <div class="half">
+        <!-- Formulario y Botón de WhatsApp -->
+        <div class="form-y-btn">
 
-    <footer id="footer">
-      <!-- Con el uso de JavaScript, el contenido de este footer se carga 
-      desde un archivo externo (footer.html) -->
-    </footer>
-  </body>
-  <!-- script para llamar a las funciones de JavaScript del archivo script.js-->
-  <script src="js/script.js"></script> 
-  </html>
+          <div class="WhatsApp">
+            <!-- Botón WhatsApp -->
+            <button type="button" class="btnWA" onclick="openWhatsApp()">
+              <i class="bi bi-whatsapp" style="font-size: 18px; color: limegreen;"></i> Escribenos al WhatsApp
+            </button>
+          </div>
+
+          <div class="form-group">
+            <!-- Formulario de contacto -->
+            <form id="form">
+              <div class="centered-content">
+                <p>Envíanos tus consultas.</p></br>
+              </div>
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="from_name" name="from_name" required>
+
+              <label for="correo">Correo electrónico:</label>
+              <input type="email" id="email" name="email" required>
+
+              <label for="asunto">Asunto:</label>
+              <input type="text" id="asunto" name="asunto" required>
+
+              <label for="mensaje">Mensaje:</label>
+              <textarea id="message" name="message" class="form-control" cols="30" rows="5" required></textarea>
+
+              <input id="button" type="submit" class="btnEnviar" value="Enviar">
+            </form>
+          </div>
+          <div id="alert-container"></div>
+          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+          <script type="text/javascript">
+            emailjs.init('3uDLlxkD76J5nJL7J')
+          </script>
+          <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        </div>
+      </div>
+
+      <div class="half">
+        <!-- Imagen, Carnets y emails -->
+        <div class="imgTable">
+          <div class="imagenContact">
+            <!-- Imagen de contacto -->
+            <img src="images/contactUS-images/answers.png">
+          </div>
+
+          <div class="contactos">
+            <!-- Lista de contactos -->
+            <h3 class="titleContactUS">Comunícate con nosotros. Estamos para ayudarte.</h3>
+            <table class="tableContactos">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Carnet</th>
+                  <th>Correo</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Detalles de contacto -->
+                <tr>
+                  <td>Melissa Alvarado</td>
+                  <td>AP22024</td>
+                  <td>ap22024@ues.edu.sv</td>
+                </tr>
+                <tr>
+                  <td>Samuel Hurtado</td>
+                  <td>HC22052</td>
+                  <td>hc22052@ues.edu.sv</td>
+                </tr>
+                <tr>
+                  <td>Reyna Miranda</td>
+                  <td>MR21082</td>
+                  <td>mr21082@ues.edu.sv</td>
+                </tr>
+                <tr>
+                  <td>Luis Polanco</td>
+                  <td>PP22054</td>
+                  <td>pp22054@ues.edu.sv</td>
+                </tr>
+                <tr>
+                  <td>William Rivera</td>
+                  <td>RA22045</td>
+                  <td>ra22045@ues.edu.sv</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <!-- Con el uso de JavaScript, el contenido de este footer se carga 
+    desde un archivo externo (footer.html) -->
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
