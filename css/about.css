@@ -1,79 +1,89 @@
-/* Estilos generales para las imágenes */
-.about-page img {
-    max-width: 100%; 
-    height: auto; 
-    display: block; 
-  }
-  
-  /* Estilos para los contenedores de secciones */
-  .about-page .container-about {
-    width: 100%;
-    padding: 20px;
-    margin-top: 100px;
-  }
-  
-  .about-page section {
-    margin-bottom: 30px;
-  }
-  
-  /* Estilos para los encabezados dentro de las secciones */
-  .about-page section h2 {
-    margin-top: 40px;
-    margin-bottom: 20px;
-  }
-  
-  /* Estilos para los párrafos dentro de las secciones */
-  .about-page section p {
-    margin-bottom: 20px;
-  }
-  
-  /* Estilos para la sección de historia */
-  .about-page .historia {
-    margin-bottom: 30px;
-  }
-  
-  /* Estilos para la misión y visión */
+/* Estilos para los contenedores de secciones */
+.about-page .container-about {
+  width: 100%;
+  padding: 20px;
+
+}
+
+.about-page section {
+  margin-bottom: 30px;
+}
+
+/* Estilos para los encabezados dentro de las secciones */
+.about-page section h2 {
+  color: #b47f31;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para los párrafos dentro de las secciones */
+.about-page section p {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+/* Estilos para la sección de historia */
+.about-page .historia {
+  margin-bottom: 30px;
+}
+
+/* Estilos para la sección de misión */
+.mision {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-left: 4px solid #b47f31;
+  transition: transform 0.3s ease-out;
+}
+
+/* Estilos para la sección de visión */
+.vision {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-left: 4px solid #b47f31;
+  transition: transform 0.3s ease-out;
+}
+
+.vision:hover {
+  transform: scale(1.02);
+}
+
+
+.mision:hover {
+  transform: scale(1.02);
+}
+
+/* Estilos para la misión y visión */
+.about-page .mision-vision {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.about-page .mision,
+.about-page .vision {
+  flex: 1;
+  background-color: #3a352e;
+  padding: 20px;
+  color: white;
+  box-sizing: border-box;
+}
+
+
+
+
+/* Media Queries para dispositivos móviles */
+@media screen and (max-width: 768px) {
   .about-page .mision-vision {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    flex-direction: column;
   }
-  
-  .about-page .mision, .about-page .vision {
-    flex: 1;
-    background-color: #b47f31;
-    padding: 20px;
-    color: white;
-    box-sizing: border-box;
+}
+
+@media screen and (max-width: 480px) {
+  .about-page .container-about {
+    padding: 10px;
   }
-  
-  .about-page .slogan {
-    font-style: italic;
-    color: rgb(0, 0, 0);
-    padding: 20px;
-    margin-bottom: 30px;
-    background-color: #ffffff;
-    border-radius: 20px;
-    text-align: center;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    font-weight: bold;
+
+  .about-page section h2 {
+    font-size: 1.5em;
   }
-  
-  
-  /* Media Queries para dispositivos móviles */
-  @media screen and (max-width: 768px) {
-    .about-page .mision-vision {
-      flex-direction: column;
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-    .about-page .container-about {
-      padding: 10px;
-    }
-  
-    .about-page section h2 {
-      font-size: 1.5em;
-    }
-  }
+}
