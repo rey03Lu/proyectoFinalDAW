@@ -2,134 +2,137 @@
 
 /**/
 .team-page .bodyteam {
+  font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    color: black;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #ff9966, #ff5e62);
+    overflow-x: hidden;
+  background: linear-gradient(to right, #ff9966, #ff5e62);
+}
+.team-page .containerteam {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  
+  align-items: flex-start; /* Align items to the top */
+  margin-top: 30px; /* Same as the height of the header */
+  margin-bottom: 40px; /* Same as the height of the footer */
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
   }
-  .team-page .containerteam {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-    
-    align-items: flex-start; /* Align items to the top */
-    margin-top: 30px; /* Same as the height of the header */
-    margin-bottom: 40px; /* Same as the height of the footer */
-    width: 100%;
-    max-width: 1140px;
-    margin: 0 auto 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
-    }
-  
-  
-  
-    .team-page .boxteam {
-    width: calc(33.333% - 40px);
-    height: 450px;
-    background-color: #d5d4c8;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 10px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 30px;
-  
-  }
-  .team-page .boxteam:hover {
-    background-color: #e8e8e8;
-    color: #c79c72;
-    text-shadow: 2px 2px 4px #f5efef;
-    padding: 20px;
-  }
-  @keyframes increase {
-    0% {
-      transform: scale(1);
-    }
-    100% {
-      transform: scale(1.1);
-    }
-  }
-  
-  .team-page .boxteam:hover {
-    animation: increase 0.3s ease-in-out forwards;
-  }
-  
-  
-  
-  
-  .team-page .boxteam h2 {
-    margin: 0;
-    font-size: 24px;
-    color: #663300;
-    text-align: center;
-  }
-  .team-page .boxteam p {
-    margin: 10px 0;
-    font-size: 18px;
-    color: #0a0707;
-    text-align: center;
-  }
-  .team-page .boxteam img {
-    width: 150px;
-    height: 150px; 
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 30px;
-    object-position: top; /* Centra la imagen en el contenedor */
-    
-    }
-  
-  .team-page .boxteam img:hover {
-    transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el puntero */
-  }
-  
-  
-  
-  
-  .team-page .titleteam {
-    text-align: center;
-    font-size: 3em;
-    color: #5a3e23;
-    text-shadow: 2px 2px 4px #f6f1f1;
-    padding-top: 120px;
-  }
-  
-  .team-page .boxteam small {
-    margin: 10px 0;
-    font-size: 10px;
-    color: #0a0707;
-    text-align: center;
-  }
-  
-  /* Media Queries for Mobile Devices */
-@media screen and (max-width: 768px) {
+
+
+
   .team-page .boxteam {
-      width: calc(50% - 40px);
-      margin: 10px 20px;
-      height: auto;
-    }
-  
-    .team-page .titleteam {
-      font-size: 2.5em;
-    }
+  width: calc(33.333% - 40px);
+  height: 450px;
+  background-color: #d5d4c8;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+
+}
+.team-page .boxteam:hover {
+  background-color: #e8e8e8;
+  color: #c79c72;
+  text-shadow: 2px 2px 4px #f5efef;
+  padding: 20px;
+}
+@keyframes increase {
+  0% {
+    transform: scale(1);
   }
-  
-  @media screen and (max-width: 480px) {
-    .team-page .boxteam {
-      width: calc(100% - 40px);
-      margin: 10px 20px;
-      height: auto;
-    }
-  
-    .team-page .titleteam {
-      font-size: 2em;
-    }
+  100% {
+    transform: scale(1.1);
   }
-  .team-page .social-media img {
-    width: 30px; /* Cambia esto al ancho que desees */
-    height: auto; /* Esto mantendrá la proporción de la imagen */
+}
+
+.team-page .boxteam:hover {
+  animation: increase 0.3s ease-in-out forwards;
+}
+
+
+
+
+.team-page .boxteam h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #663300;
+  text-align: center;
+}
+.team-page .boxteam p {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #0a0707;
+  text-align: center;
+}
+.team-page .boxteam img {
+  width: 150px;
+  height: 150px; 
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 30px;
+  object-position: top; /* Centra la imagen en el contenedor */
+  
   }
+
+.team-page .boxteam img:hover {
+  transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el puntero */
+}
+
+
+
+
+.team-page .titleteam {
+  text-align: center;
+  font-size: 3em;
+  color: #5a3e23;
+  text-shadow: 2px 2px 4px #f6f1f1;
+  padding-top: 120px;
+}
+
+.team-page .boxteam small {
+  margin: 10px 0;
+  font-size: 10px;
+  color: #0a0707;
+  text-align: center;
+}
+
+/* Media Queries for Mobile Devices */
+@media screen and (max-width: 768px) {
+.team-page .boxteam {
+    width: calc(50% - 40px);
+    margin: 10px 20px;
+    height: auto;
+  }
+
+  .team-page .titleteam {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .team-page .boxteam {
+    width: calc(100% - 40px);
+    margin: 10px 20px;
+    height: auto;
+  }
+
+  .team-page .titleteam {
+    font-size: 2em;
+  }
+}
+.team-page .social-media img {
+  width: 30px; /* Cambia esto al ancho que desees */
+  height: auto; /* Esto mantendrá la proporción de la imagen */
+}

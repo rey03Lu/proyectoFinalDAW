@@ -1,0 +1,1137 @@
+/* General */
+* {
+    box-sizing: border-box;
+}
+
+.index-page {
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    color: black;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Main  */
+.index-page main {
+    padding-bottom: 50px;
+}
+
+/* Links */
+.index-page a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Parrafos */
+.index-page p {
+    color: black;
+}
+
+/* Margen entre el header y el contenido principal del slider */
+.index-page .main-content {
+    margin-top: 80px;
+}
+
+/* Main Slider */
+.index-page .slider {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    height: 750px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Slides */
+.index-page .slides {
+    position: relative;
+    width: 100%;
+    height: 750px;
+}
+
+/* Slide */
+.index-page .slide {
+    display: none;
+    width: 100%;
+    height: 750px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Caption */
+.index-page .caption {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 325px;
+    height: 100%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.index-page .caption h2 {
+    color: white; /* Asegura que el h2 dentro de caption sea blanco */
+}
+
+/* Botones */
+.index-page button {
+    margin-top: 10px;
+    padding: 15px 25px;
+    background-color: #b47f31;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 2px;
+    /* Transición suave */
+    transition: background-color 0.3s;
+}
+
+.index-page button:hover {
+    background-color: #945b1f;
+}
+
+/* Transiciones suaves */
+.index-page html {
+    scroll-behavior: smooth;
+}
+
+/* Flechas */
+.index-page .prev,
+.index-page .next {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: auto;
+    padding: 20px;
+    margin-top: -20px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.3s;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.index-page .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.index-page .prev:hover,
+.index-page .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Slider Mobile */
+@media (max-width: 768px) {
+    .index-page .slider {
+        height: 400px;
+    }
+
+    .index-page .slide {
+        height: 400px;
+    }
+
+    .index-page h2 {
+        font-size: 1.2em;
+    }
+
+    .index-page .caption {
+        padding: 100px;
+    }
+
+    .index-page button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .index-page .prev,
+    .index-page .next {
+        top: 45%;
+        padding: 20px;
+        font-size: 20px;
+    }
+}
+
+/* Seccion Nosotros */
+.index-page .seccion-nosotros {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    background-color: #f6f7f8;
+}
+
+/* Slider Nosotros */
+.index-page .slider-nosotros {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    height: 420px;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6), 0 6px 20px rgba(0, 0, 0, 0.6);
+    /* Sombras para el efecto 3D */
+    border-radius: 1px;
+    /* Bordes redondeados */
+}
+
+/* Slides */
+.index-page .slides-nosotros {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.index-page .slide-nosotros {
+    flex: 0 0 100%;
+    height: 420px;
+    background-size: cover;
+    /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.9s ease;
+    /* Añade una transición suave para el efecto de zoom */
+}
+
+
+/* Efecto de zoom en la imagen al pasar el ratón sobre ella */
+.index-page .slide-nosotros:hover {
+    transform: scale(1.3);
+    /* Escala la imagen al 110% de su tamaño original */
+    transition: transform 0.9s ease;
+    /* Añade una transición suave para el efecto de zoom */
+}
+
+.index-page .slide-nosotros:not(:hover) {
+    transform: scale(1);
+    /* Vuelve la imagen a su tamaño original */
+}
+
+/* Indicadores */
+.index-page .indicators {
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+}
+
+.index-page .indicator {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.index-page .active-us,
+.index-page .indicator:hover {
+    background-color: #b47f31;
+}
+
+
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+    .index-page .columna-mobile {
+        width: 100%;
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+
+    .index-page .slider-nosotros {
+        height: 250px;
+    }
+
+    .index-page .slide-nosotros {
+        height: 250px;
+    }
+
+    .index-page .seccion-nosotros {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .index-page .container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .index-page .row {
+        flex-direction: column;
+    }
+
+    /* Alinea el texto y el botón a la izquierda */
+    .index-page .seccion-nosotros h2,
+    .index-page .seccion-nosotros p {
+        text-align: left;
+    }
+
+    .index-page .seccion-nosotros h1 {
+        font-size: 1.7em;
+        text-align: left;
+    }
+
+    /* Alinea el botón a la izquierda */
+    .index-page .seccion-nosotros a {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .index-page .seccion-nosotros button {
+        text-align: left;
+    }
+
+}
+
+
+
+
+/* Seccion Año */
+.index-page .row-year {
+    text-align: right;
+    border-right: 10px solid #000;
+    /* Cambia el color del borde según lo necesites */
+    padding-right: 20px;
+    /* Agrega un espacio de 10px entre el texto y el borde */
+    padding-top: none;
+}
+
+.index-page .seccion-year {
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 1px;
+    background-color: #f6f7f8;
+}
+
+.index-page #nuestrosProyectos h1,
+.index-page #nuestrosProyectos h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.index-page #nuestrosProyectos h1 {
+    font-size: 4em;
+    font-weight: bold;
+    color: #DDDEDF;
+    /* Gris claro */
+}
+
+
+
+/* Sección Proyectos */
+.index-page .seccion-proyectos {
+    padding: 10px 0;
+    margin-bottom: 1px;
+    background-color: #f6f7f8;
+}
+
+.index-page .seccion-proyectos h1 {
+    font-size: 2.5em;
+    color: #333;
+    text-align: left;
+}
+
+.index-page .under-line {
+    position: relative;
+    display: inline-block;
+}
+
+.index-page .under-line::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #b47f31;
+    bottom: -2px;
+    left: 0;
+}
+
+.index-page .filtros {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.index-page .filter-btn {
+    background-color: #ddd;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.index-page .filter-btn:hover,
+.index-page .filter-btn.active-projects {
+    background-color: #b47f31;
+    color: white;
+}
+
+.index-page .galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.index-page .galeria-item {
+    display: none;
+}
+
+.index-page .show {
+    display: block;
+}
+
+.index-page .galeria-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease;
+}
+
+.index-page .galeria-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+    .index-page .seccion-proyectos h1 {
+        font-size: 2.4em;
+        text-align: left;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .index-page .filtros {
+        text-align: left;
+        padding-left: 15px;
+        padding-bottom: 15px;
+    }
+
+    .index-page .filter-btn {
+        font-size: 15px;
+        padding: 8px 15px;
+        margin: 3px;
+    }
+
+    .index-page .galeria {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 0;
+        padding: 0;
+        margin: -5px;
+        /* Ajusta los márgenes negativos */
+    }
+
+    .index-page .galeria-item {
+        width: calc(100% / 1);
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .index-page .galeria-item img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+        transition: transform 0.5s ease;
+    }
+}
+
+
+
+/* Sección Diseños Increíbles */
+.index-page .seccion-diseno {
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+    margin-top: none;
+    padding-bottom: 40px;
+    background-color: #f6f7f8;
+    /* Fondo gris claro */
+    position: relative;
+}
+
+.index-page .row-diseno {
+    text-align: right;
+    border-right: 10px solid #000;
+    /* Cambia el color del borde según lo necesites */
+    padding-right: 20px;
+    /* Agrega un espacio de 10px entre el texto y el borde */
+    padding-top: none;
+}
+
+.index-page #nuestrosClientes h1,
+.index-page #nuestrosClientes h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.index-page #nuestrosClientes h1 {
+    font-size: 2.4em;
+    font-weight: bold;
+    color: #DDDEDF;
+    transition: color 0.3s ease;
+    /* Transición suave para el color */
+}
+
+.index-page .link-diseno {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+
+    .index-page .seccion-diseno {
+        padding-left: 15px;
+    }
+
+    .index-page .seccion-diseno h1 {
+        font-size: 1.0em;
+        /* Reduce el tamaño del h1 para móviles */
+    }
+}
+
+/* Sección Nuestros Clientes */
+.index-page .nuestros-clientes {
+    background-color: #000;
+    /* Fondo negro */
+    padding: 50px 0;
+    color: #fff;
+    overflow: hidden;
+    /* Para asegurarse de que no haya desbordamiento */
+    margin: 0; /* Asegura que no haya margen superior o inferior */
+}
+
+.index-page .nuestros-clientes h1 {
+    font-size: 2.7em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.index-page .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    /* Eliminar márgenes adicionales */
+    padding: 0;
+    /* Eliminar rellenos adicionales */
+}
+
+.index-page .columna {
+    padding: 0;
+    /* Eliminar rellenos adicionales */
+}
+
+.index-page .columna-40 {
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+
+.index-page .columna-60 {
+    flex: 0 0 60%;
+    max-width: 60%;
+    overflow: hidden;
+    /* Para asegurarse de que el carrusel no se salga del contenedor */
+    padding: 0;
+    /* Eliminar rellenos adicionales */
+}
+
+.index-page .carrusel-clientes {
+    background-color: #fff;
+    /* Fondo blanco para las imágenes */
+    padding: 0;
+    /* Eliminar rellenos adicionales */
+    overflow: hidden;
+    position: relative;
+}
+
+.index-page .carrusel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    /* Eliminar márgenes adicionales */
+    padding: 0;
+    /* Eliminar rellenos adicionales */
+}
+
+.index-page .carrusel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    margin: 0;
+    /* Eliminar márgenes adicionales */
+    padding: 0;
+    /* Eliminar rellenos adicionales */
+}
+
+.index-page .carrusel-item {
+    min-width: 25%;
+    /* 100 / 4 = 25 */
+    margin: 0;
+    /* Eliminar márgenes adicionales */
+    padding: 0;
+    /* Eliminar rellenos adicionales */
+}
+
+.index-page .carrusel img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* Ajustar el contenido de las secciones para que no se escondan detrás del header */
+.index-page .parallax-section,
+.index-page .seccion-contacto {
+    /* Ajustar según la altura del header */
+    padding-top: 120px;
+}
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+    .index-page .nuestros-clientes h1 {
+        font-size: 2em;
+        /* Reducir el tamaño del título h1 para móviles */
+        text-align: center;
+        /* Centrar el título en dispositivos móviles */
+    }
+
+    .index-page .columna {
+        flex: 0 0 100%;
+        /* Ocupar todo el ancho en dispositivos móviles */
+        max-width: 100%;
+        text-align: center;
+        /* Centrar contenido en dispositivos móviles */
+        margin-bottom: 20px;
+        /* Espacio entre las columnas */
+    }
+
+    .index-page .carrusel-clientes {
+        padding: 15px;
+        /* Agregar espacio interno en dispositivos móviles */
+        overflow: hidden;
+        /* Para ocultar el desbordamiento de las imágenes */
+    }
+
+    .index-page .carrusel {
+        display: flex;
+        overflow-x: auto;
+        /* Permitir desplazamiento horizontal en móviles */
+        -webkit-overflow-scrolling: touch;
+        /* Desplazamiento suave para iOS */
+        scroll-snap-type: x mandatory;
+        /* Scroll snap para desplazamiento */
+        margin: 0 -30px;
+        /* Ajuste para el margen izquierdo y derecho */
+    }
+
+    .index-page .carrusel-item {
+        flex: 0 0 auto;
+        /* Permitir que los items se ajusten automáticamente */
+        margin: 0 30px;
+        /* Espacio entre los items */
+        scroll-snap-align: start;
+        /* Alinear al principio del scroll snap */
+        transition: transform 0.5s ease;
+        /* Transición suave entre imágenes */
+        will-change: transform;
+        /* Mejora de rendimiento */
+    }
+
+    .index-page .carrusel img {
+        width: 100%;
+        /* Asegurar que las imágenes ocupen el ancho completo */
+        height: auto;
+        display: block;
+    }
+}
+
+/* Sección Parallax */
+.index-page .parallax-section {
+    position: relative;
+    background: url('/images/home-images/clientes/section-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 100px 0;
+    color: #fff;
+    margin: 0; /* Asegura que no haya margen superior o inferior */
+}
+
+.index-page .parallax-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* Fondo oscuro con opacidad del 50% */
+}
+
+.index-page .content-box {
+    text-align: left;
+    border: 5px solid #fff;
+    padding: 20px;
+    display: inline-block;
+}
+
+.index-page .content-box h1 {
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: bold;
+    color: #fff;
+}
+
+.index-page .parallax-section h3 {
+    color: #fff;
+}
+
+.index-page .parallax-section h4 {
+    color: #fff;
+}
+
+.index-page .parallax-section h5 {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.index-page .content-box h1 span {
+    display: block;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+.index-page .content-box p {
+    margin: 10px 0 30px;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.index-page .facts-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.index-page .fact {
+    text-align: center;
+}
+
+.index-page .fact h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.index-page .fact p {
+    font-size: 0.9em;
+    margin: 5px 0 0;
+}
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+    .index-page .parallax-section {
+        padding: 60px 0;
+        /* Reducir el padding en dispositivos móviles */
+        text-align: center;
+        /* Centrar el contenido en dispositivos móviles */
+        background-attachment: scroll;
+        /* Permitir que la imagen de fondo se desplace */
+        background-position: center center;
+        /* Ajustar posición de la imagen de fondo */
+    }
+
+    .index-page .parallax-section::before {
+        background: rgba(0, 0, 0, 0.7);
+        /* Ajusta opacidad más oscura para mejor legibilidad */
+    }
+
+    .index-page .content-box {
+        border: none;
+        /* Eliminar borde en dispositivos móviles */
+        padding: 15px;
+        /* Ajustar espacio interno */
+    }
+
+    .index-page .content-box h1 {
+        font-size: 2em;
+        /* Reducir tamaño del título principal */
+        text-align: center;
+    }
+
+    .index-page .parallax-section h5 {
+        font-size: 1em;
+        /* Reducir tamaño del texto secundario */
+        margin-bottom: 20px;
+        /* Ajustar margen inferior */
+        text-align: center;
+    }
+
+    .index-page .facts-container {
+        flex-wrap: wrap;
+        /* Permitir que los elementos se ajusten en varias líneas */
+        justify-content: center;
+        /* Centrar elementos */
+    }
+
+    .index-page .fact {
+        width: 100%;
+        /* Ocupar todo el ancho disponible */
+        margin-bottom: 20px;
+        /* Espacio entre cada hecho */
+    }
+
+    .index-page .fact h2 {
+        font-size: 1.5em;
+        /* Reducir tamaño del número */
+        margin-bottom: 5px;
+        /* Ajustar margen inferior */
+    }
+
+    .index-page .fact p {
+        font-size: 0.8em;
+        /* Reducir tamaño del texto */
+        margin: 0;
+        /* Eliminar margen */
+    }
+}
+
+
+
+
+/* Sección de Equipo */
+.index-page .team-section {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0; /* Asegura que no haya margen superior o inferior */
+}
+
+.index-page .team-section .container {
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.index-page .team-section h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+    margin-bottom: 40px;
+    display: inline-block;
+}
+
+.index-page .team-section h2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #b47f31;
+    bottom: -20px;
+    left: 0;
+}
+
+.index-page .team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.index-page .team-member {
+    flex: 1 1 45%;
+    max-width: 300px;
+    margin: 20px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    /* Transición suave para el efecto de zoom */
+}
+
+.index-page .team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.index-page .team-member h3 {
+    font-size: 1.3em;
+    margin: 15px 0 5px;
+}
+
+.index-page .team-member p {
+    font-size: 1em;
+    color: #777;
+}
+
+/* Efecto de zoom al hacer hover */
+.index-page .team-member:hover {
+    transform: scale(1.10);
+    /* Aumenta el tamaño al 105% */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .index-page .team-member {
+        flex: 1 1 100%;
+        max-width: none;
+    }
+
+    .index-page .team-section h2 {
+        font-size: 2.0em;
+    }
+}
+
+/* Sección que linkea a Nuestro Equipo */
+.index-page .seccion-equipo {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 20px 0; /* Elimina el padding superior y añade padding inferior */
+    margin: 0; /* Asegura que no haya margen superior o inferior */
+    background-color: #f4f4f4;
+    /* Fondo gris claro */
+    position: relative;
+}
+
+.index-page .row-equipo {
+    text-align: right;
+    border-right: 10px solid #000;
+    /* Cambia el color del borde según lo necesites */
+    padding-right: 20px;
+    /* Agrega un espacio de 10px entre el texto y el borde */
+}
+
+.index-page #nuestroEquipo h1,
+.index-page #nuestroEquipo h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.index-page #nuestroEquipo h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #DDDEDF;
+    transition: color 0.3s ease;
+    /* Transición suave para el color */
+}
+
+.index-page .link-equipo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+    .index-page #nuestroEquipo h1 {
+        font-size: 1.8em;
+        /* Reduce el tamaño del h1 */
+        color: #DDDEDF;
+        /* Cambia el color del texto para mejor legibilidad */
+    }
+
+    .index-page #nuestroEquipo h4 {
+        font-size: 1em;
+        /* Ajusta el tamaño del h4 */
+        color: #000;
+        /* Ajusta el color del h4 */
+    }
+}
+
+
+/* Sección de Contacto */
+.index-page .seccion-contacto {
+    padding: 60px 0;
+    background: url('/images/home-images/contact/contact-background.jpg') no-repeat center center;
+    /* Ruta de la imagen de fondo */
+    background-size: cover;
+    color: #fff;
+    /* Color del texto en blanco para contrastar con el fondo */
+    text-align: center;
+    position: relative;
+    margin: 0; /* Asegura que no haya margen superior o inferior */
+}
+
+.index-page .seccion-contacto::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Oscurecer el fondo con un overlay */
+    z-index: 1;
+}
+
+.index-page .seccion-contacto .container {
+    position: relative;
+    z-index: 2;
+    /* Elevar el contenido sobre el overlay */
+}
+
+.index-page .seccion-contacto .content-box {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.index-page .seccion-contacto h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.index-page .seccion-contacto h1 span {
+    display: block;
+    font-size: 1.2em;
+    color: #b47f31;
+    /* Color del span */
+}
+
+.index-page .seccion-contacto h5 {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.index-page .seccion-contacto ul {
+    list-style: none;
+    padding: 0;
+}
+
+.index-page .seccion-contacto ul li {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.index-page .seccion-contacto ul li i {
+    font-size: 1.5em;
+    margin-right: 10px;
+    color: #b47f31;
+    /* Color de los íconos */
+}
+
+.index-page .contacto-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.index-page .contacto-link:hover,
+.index-page .contacto-link:focus {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .index-page .seccion-contacto h1 {
+        font-size: 2em;
+        text-align: left;
+    }
+
+    .index-page .seccion-contacto h5 {
+        font-size: 1em;
+    }
+
+    .index-page .seccion-contacto ul li {
+        font-size: 1em;
+    }
+
+    .index-page .seccion-contacto ul li i {
+        font-size: 1.2em;
+    }
+}
+
+/* Sección del Mapa */
+.index-page .seccion-map {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #f4f4f4;
+    /* Fondo gris claro */
+    padding: 0;
+    /* Elimina el padding adicional */
+    margin: 0; /* Asegura que no haya margen superior o inferior */
+}
+
+.index-page .seccion-map iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+}
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+    .index-page .seccion-map iframe {
+        height: 300px;
+        /* Ajusta la altura para dispositivos móviles */
+    }
+}
+
+
+
+
+/* Articulo */
+.index-page .article {
+    float: right;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.index-page .article:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.1);
+}
+
+
+.index-page figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 420px;
+    margin: auto;
+}
+
+.index-page img {
+    max-width: 420px;
+    max-height: 350px;
+}
+
+.index-page figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}

@@ -1,107 +1,106 @@
 /* Selectores Pagina de Servicios */
 .service-page .services {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .service-page .service {
-    width: 30%;
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.service-page .service {
+  width: 30%;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.service-page  .service i {
+  font-size: 24px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+.service-page .service h4 {
+  margin-top: 0;
+}
+
+.service-page .services-title {
+  text-align: center;
+  padding: 20px;
+  padding-top: 130px;
+  background-image: url('/images/imagenservices/servicestitleimg.png'); /* Cambia esta ruta a la correcta */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*color: white; /* Cambia el color del texto a blanco para mejor contraste */
+  height: 60vh; /* Ajusta la altura según sea necesario */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-page .services-title h1 {
+  text-align: center;
+  font-size: 2.5em;
+    margin: 0;
+    color: white;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background for better readability */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-  .service-page  .service i {
-    font-size: 24px;
-    margin-bottom: 10px;
-    transition: transform 0.3s ease;
-  }
-  .service-page .service h4 {
-    margin-top: 0;
-  }
-  
-  .service-page .services-title {
-    text-align: center;
-    padding: 20px;
-    padding-top: 120px;
-    background-image: url('/images/home-images/slider/slide1.jpg'); /* Cambia esta ruta a la correcta */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    /*color: white; /* Cambia el color del texto a blanco para mejor contraste */
-    height: 40vh; /* Ajusta la altura según sea necesario */
-    display: flex;
     align-items: center;
-    justify-content: center;
-  }
-  
-  .service-page .services-title h1 {
-    text-align: center;
-    font-size: 2.5em;
-      margin: 0;
-      color: white;
-      padding: 30px;
-      background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background for better readability */
-      border-radius: 10px;
-      align-items: center;
-    justify-content: center;
-  }
-  
-  .service-page .container-service {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1240px;
-    margin: 0 auto 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
-  }
-  
-  
-  
-  .service-page .service i.fas {
-    transition: transform 0.3s ease;
-  }
-  
-  .service-page .service:hover i.fas {
-    transform: scale(1.1);
-  }
-  
+  justify-content: center;
+}
+
+.service-page .container-service {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+}
+
+
+
+.service-page .service i.fas {
+  transition: transform 0.3s ease;
+}
+
+.service-page .service:hover i.fas {
+  transform: scale(1.1);
+}
+
+.service-page .service {
+  transition: transform 0.3s ease;
+}
+
+.service-page .service:hover {
+  transform: scale(1.05);
+}
+
+
+/*MOVIL*/
+
+
+
+/* Media Queries para dispositivos móviles */
+@media screen and (max-width: 768px) {
   .service-page .service {
-    transition: transform 0.3s ease;
+    width: calc(50% - 40px);
   }
-  
-  .service-page .service:hover {
-    transform: scale(1.05);
+
+  .service-page .services-title h1 {
+    font-size: 2em;
   }
-  
-  
-  /*MOVIL*/
-  
-  
-  
-  /* Media Queries para dispositivos móviles */
-  @media screen and (max-width: 768px) {
-    .service-page .service {
-      width: calc(50% - 40px);
-    }
-  
-    .service-page .services-title h1 {
-      font-size: 2em;
-    }
+}
+
+@media screen and (max-width: 480px) {
+  .service-page .service {
+    width: calc(100% - 40px);
   }
-  
-  @media screen and (max-width: 480px) {
-    .service-page .service {
-      width: calc(100% - 40px);
-    }
-  
-    .service-page  .services-title h1 {
-      font-size: 1.5em;
-    }
+
+  .service-page  .services-title h1 {
+    font-size: 1.5em;
   }
-  
+}
