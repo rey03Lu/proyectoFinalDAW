@@ -1,20 +1,337 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <!-- Deja el contenido estático necesario en el head, si lo hay -->
-  </head>
+<head>
+  <!-- Deja el contenido estático necesario en el head, si lo hay -->
+</head>
 
-  <body>
-    <header id="header">
-      <!-- Con el uso de JavaScript, el contenido de este header se carga desde un archivo externo -->
-    </header>
 
-    <footer id="footer">
-      <!-- Con el uso de JavaScript, el contenido de este footer se carga 
+<body class="index-page">
+  <header id="header">
+    <!-- Con el uso de JavaScript, el contenido de este header se carga 
+      desde un archivo externo (header.html) -->
+  </header>
+
+  <!-- Contenido principal -->
+  <div class="main-content">
+    <div class="slider">
+      <div class="slides">
+        <div class="slide" style="background-image: url('images/home-images/slider/slide1.jpg');">
+          <div class="caption">
+            <h2>Colectividad con responsabilidad cultural y social</h2>
+            <a href="#nosotros"><button>Más sobre nosotros</button></a>
+          </div>
+        </div>
+        <div class="slide" style="background-image: url('images/home-images/slider/slide2.jpg');">
+          <div class="caption">
+            <h2>Soluciones en arquitectura y diseño urbano</h2>
+            <a href="#nuestrosProyectos"><button>Nuestros proyectos</button></a>
+          </div>
+        </div>
+        <div class="slide" style="background-image: url('images/home-images/slider/slide3.jpg');">
+          <div class="caption">
+            <h2>Clientes que confían en nosotros</h2>
+            <a href="#nuestrosClientes"><button>Nuestros clientes</button></a>
+          </div>
+        </div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  </div>
+
+  <main>
+
+    <section id="nosotros" class="seccion-nosotros">
+      <div class="container">
+        <div class="row">
+          <div class="columna columna-50 columna-mobile">
+            <div>
+              <h2>¿QUIÉNES SOMOS?</h2>
+              <h1>SOMOS UN ESTUDIO <br>
+                DE ARQUITECTURA CREATIVA
+              </h1>
+              <p>Fundada en 2005 por ingenieros y arquitectos apasionados,
+                transformamos espacios urbanos con innovación y sostenibilidad.
+              </p>
+              <a href="about.html"><button>Más acerca de nosotros</button></a>
+            </div>
+          </div>
+          <div class="columna columna-50 columna-mobile">
+            <div class="slider-nosotros">
+              <div class="slides-nosotros">
+                <div class="slide-nosotros" style="background-image: url('images/home-images/nosotros/pic1.jpg');">
+                </div>
+                <div class="slide-nosotros" style="background-image: url('images/home-images/nosotros/pic2.jpg');">
+                </div>
+                <div class="slide-nosotros" style="background-image: url('images/home-images/nosotros/pic3.jpg');">
+                </div>
+                <div class="slide-nosotros" style="background-image: url('images/home-images/nosotros/pic4.jpg');">
+                </div>
+              </div>
+              <div class="indicators">
+                <span class="indicator" onclick="currentSlideNosotros(1)"></span>
+                <span class="indicator" onclick="currentSlideNosotros(2)"></span>
+                <span class="indicator" onclick="currentSlideNosotros(3)"></span>
+                <span class="indicator" onclick="currentSlideNosotros(4)"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="nuestrosProyectos" class="seccion-year">
+      <div class="container">
+        <div class="row-year">
+          <h1>19 AÑOS</h1>
+          <h4>DE EXPERIENCIA TRABAJANDO</h4>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="seccion-proyectos">
+      <div class="container">
+        <h1><span class="under-line">ÚLTIMOS</span> PROYECTOS</h1>
+        <div class="filtros">
+          <button class="filter-btn active-projects" onclick="filterSelection('all')">Todos</button>
+          <button class="filter-btn" onclick="filterSelection('edificio')">Edificio</button>
+          <button class="filter-btn" onclick="filterSelection('interior')">Interior</button>
+          <button class="filter-btn" onclick="filterSelection('restaurante')">Restaurante</button>
+        </div>
+        <div class="galeria">
+          <!-- Edificio -->
+          <div class="galeria-item edificio">
+            <img src="images/home-images/projects/edificio/edi1.jpg" alt="Proyecto 1">
+          </div>
+          <div class="galeria-item edificio">
+            <img src="images/home-images/projects/edificio/edi2.jpg" alt="Proyecto 2">
+          </div>
+          <div class="galeria-item edificio">
+            <img src="images/home-images/projects/edificio/edi3.jpg" alt="Proyecto 3">
+          </div>
+          <div class="galeria-item edificio">
+            <img src="images/home-images/projects/edificio/edi4.jpg" alt="Proyecto 4">
+          </div>
+          <div class="galeria-item edificio">
+            <img src="images/home-images/projects/edificio/edi5.jpg" alt="Proyecto 5">
+          </div>
+          <div class="galeria-item edificio">
+            <img src="images/home-images/projects/edificio/edi6.jpg" alt="Proyecto 6">
+          </div>
+          <!-- Interior -->
+          <div class="galeria-item interior">
+            <img src="images/home-images/projects/interior/int1.jpg" alt="Proyecto 7">
+          </div>
+          <div class="galeria-item interior">
+            <img src="images/home-images/projects/interior/int2.jpg" alt="Proyecto 8">
+          </div>
+          <div class="galeria-item interior">
+            <img src="images/home-images/projects/interior/int3.jpg" alt="Proyecto 9">
+          </div>
+          <div class="galeria-item interior">
+            <img src="images/home-images/projects/interior/int4.jpg" alt="Proyecto 10">
+          </div>
+          <div class="galeria-item interior">
+            <img src="images/home-images/projects/interior/int5.jpg" alt="Proyecto 11">
+          </div>
+          <div class="galeria-item interior">
+            <img src="images/home-images/projects/interior/int6.jpg" alt="Proyecto 12">
+          </div>
+          <!-- Restaurante -->
+          <div class="galeria-item restaurante">
+            <img src="images/home-images/projects/restaurant/rest1.jpg" alt="Proyecto 13">
+          </div>
+          <div class="galeria-item restaurante">
+            <img src="images/home-images/projects/restaurant/rest2.jpg" alt="Proyecto 14">
+          </div>
+          <div class="galeria-item restaurante">
+            <img src="images/home-images/projects/restaurant/rest3.jpg" alt="Proyecto 15">
+          </div>
+          <div class="galeria-item restaurante">
+            <img src="images/home-images/projects/restaurant/rest4.jpg" alt="Proyecto 16">
+          </div>
+          <div class="galeria-item restaurante">
+            <img src="images/home-images/projects/restaurant/rest5.jpg" alt="Proyecto 17">
+          </div>
+          <div class="galeria-item restaurante">
+            <img src="images/home-images/projects/restaurant/rest6.jpg" alt="Proyecto 18">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="nuestrosClientes" class="seccion-diseno">
+      <a href="service.html" class="link-diseno">
+        <div class="container">
+          <div class="row-diseno">
+            <h1>CLIC ACÁ PARA CONOCER NUESTROS SERVICIOS</h1>
+            <h4>DISEÑOS INCREÍBLES</h4>
+          </div>
+        </div>
+      </a>
+    </section>
+
+
+    <section id="clientes" class="nuestros-clientes">
+      <div class="container">
+        <div class="row">
+          <div class="columna columna-40">
+            <h1>NUESTROS CLIENTES</h1>
+          </div>
+          <div class="columna columna-60 carrusel-clientes">
+            <div class="carrusel">
+              <div class="carrusel-track">
+                <div class="carrusel-item"><img src="images/home-images/clientes/cte1.png" alt="Cliente 1"></div>
+                <div class="carrusel-item"><img src="images/home-images/clientes/cte2.png" alt="Cliente 2"></div>
+                <div class="carrusel-item"><img src="images/home-images/clientes/cte3.png" alt="Cliente 3"></div>
+                <div class="carrusel-item"><img src="images/home-images/clientes/cte4.png" alt="Cliente 4"></div>
+                <div class="carrusel-item"><img src="images/home-images/clientes/cte5.png" alt="Cliente 5"></div>
+                <div class="carrusel-item"><img src="images/home-images/clientes/cte6.png" alt="Cliente 6"></div>
+                <!-- Duplica los elementos para un efecto continuo -->
+                <div class="carrusel-item"><img src="images/home-images/clientes/cte1.png" alt="Cliente 1"></div>
+                <div class="carrusel-item"><img src="images/home-images/clientes/cte2.png" alt="Cliente 2"></div>
+                <div class="carrusel-item"><img src="images/home-images/clientes/cte3.png" alt="Cliente 3"></div>
+                <div class="carrusel-item"><img src="images/home-images/clientes/cte4.png" alt="Cliente 4"></div>
+                <div class="carrusel-item"><img src="images/home-images/clientes/cte5.png" alt="Cliente 5"></div>
+                <div class="carrusel-item"><img src="images/home-images/clientes/cte6.png" alt="Cliente 6"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="facts" class="parallax-section">
+      <a href="customers.html" class="contacto-link">
+        <div class="container">
+          <div class="content-box">
+            <h1>ALGUNOS <br><span>HECHOS INTERESANTES</span></h1>
+            <h5>Nos enorgullece trabajar con una variedad de clientes satisfechos,
+              completando proyectos con éxito. Descubre más sobre nuestros logros
+              y cómo podemos ayudarte haciendo clic en esta sección.</h5>
+            <div class="facts-container">
+              <div class="fact">
+                <h3>451</h3>
+                <h4>CLIENTES SATISFECHOS</h4>
+              </div>
+              <div class="fact">
+                <h3>532</h3>
+                <h4>PROYECTOS FINALIZADOS</4>
+              </div>
+              <div class="fact">
+                <h3>3650</h3>
+                <h4>DÍAS DE TRABAJO</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </section>
+
+    <section id="team" class="team-section">
+      <div class="container">
+        <h2><span>NUESTRO EQUIPO</span></h2>
+        <div class="team-container">
+          <div class="team-member">
+            <img src="/images/home-images/team/Meli.jpeg" alt="Melissa Alvarado">
+            <h3>MELISSA ALVARADO</h3>
+            <p>Co-manager asociado</p>
+          </div>
+          <div class="team-member">
+            <img src="/images/home-images/team/Queen.jpeg" alt="Reyna Miranda">
+            <h3>REYNA MIRANDA</h3>
+            <p>Co-manager asociado</p>
+          </div>
+          <div class="team-member">
+            <img src="/images/home-images/team/Luis.jpg" alt="Luis Polanco">
+            <h3>LUIS POLANCO</h3>
+            <p>Co-manager asociado</p>
+          </div>
+          <div class="team-member">
+            <img src="/images/home-images/team/William.jpeg" alt="William Rivera">
+            <h3>WILLIAM RIVERA</h3>
+            <p>Co-manager asociado</p>
+          </div>
+          <div class="team-member">
+            <img src="/images/home-images/team/Samuel.jpeg" alt="Samuel Hurtado">
+            <h3>SAMUEL HURTADO</h3>
+            <p>Co-manager asociado</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="nuestroEquipo" class="seccion-equipo">
+      <a href="team.html" class="link-equipo">
+        <div class="container">
+          <div class="row-equipo">
+            <h1>CLIC ACÁ PARA CONOCER NUESTRO EQUIPO</h1>
+            <h4>NUESTROS EXPERTOS</h4>
+          </div>
+        </div>
+      </a>
+    </section>
+
+
+
+
+    <section id="contacto" class="seccion-contacto">
+      <a href="contactUs.html" class="contacto-link">
+        <div class="container">
+          <div class="content-box">
+            <h1>CONTÁCTANOS</h1>
+            <h5>Estamos aquí para ayudarte con cualquier pregunta que pueda tener.
+              No dude en usar el formulario de nuestra página de contacto para
+              comunicarse con nosotros, haciendo clic en esta sección.
+              ¡Esperamos saber de ti pronto!</h5>
+
+            <ul>
+              <li>Dirección: Ave. Fray Felipe De Jesus Moraga Sur, Santa Ana.</li>
+              <li>Teléfono: +503 2484 0800</li>
+              <li>Correo electrónico: fmocc@ues.edu.sv</li>
+            </ul>
+          </div>
+        </div>
+      </a>
+    </section>
+
+    <section id="map" class="seccion-map">
+      <div class="container">
+      </div>
+      <iframe width="1690" height="450" frameborder="0"
+        src="
+      https://maps.google.com/maps?width=1960&amp;height=450&amp;hl=en&amp;q=Facultad%20Multidisciplinaria%20de%20Occidente%20UES%20Santa%20Ana+(FMOCC%20UES)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+    </section>
+
+  </main>
+
+  <footer id="footer">
+    <!-- Con el uso de JavaScript, el contenido de este footer se carga 
       desde un archivo externo (footer.html) -->
-    </footer>
-  </body>
+  </footer>
+
   <!-- script para llamar a las funciones de JavaScript del archivo script.js-->
-  <script src="js/script.js"></script> 
-  </html>
+  <script src="js/script.js"></script>
+
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/66729e2b9a809f19fb3f51ec/1i0nrjn01';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+
+</body>
+
+</html>
